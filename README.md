@@ -1,68 +1,69 @@
-# 📋 Gerenciador de Metas - CLI com Inquirer
+# 🚀 Gerenciador de Metas
 
-Este projeto é um gerenciador de metas pessoais que roda diretamente no terminal (linha de comando), feito com Node.js e a biblioteca `@inquirer/prompts`. O usuário pode cadastrar novas metas e marcar como concluídas de forma interativa.
+Um aplicativo de linha de comando (CLI) simples para gerenciar metas e tarefas pessoais, desenvolvido em Node.js. Permite cadastrar, listar, marcar como concluídas, visualizar abertas, deletar e visualizar metas realizadas, tudo de forma interativa no terminal.
 
-## 🚀 Funcionalidades
+## ✨ Funcionalidades
 
-- [x] Cadastrar novas metas
-- [x] Listar metas existentes
-- [x] Marcar metas como concluídas usando interface interativa
-- [x] Navegação via teclado (setas, espaço e enter)
+- 📝 **Cadastrar meta:** Adicione novas metas/tarefas.
+- 📋 **Listar metas:** Veja todas as metas e marque como concluídas.
+- ✅ **Metas realizadas:** Visualize apenas as metas já concluídas.
+- ⏳ **Metas abertas:** Visualize apenas as metas pendentes.
+- 🗑️ **Deletar metas:** Remova metas selecionadas.
+- 💾 **Persistência:** As metas são salvas em um arquivo `metas.json`.
 
-## 🖥️ Demonstração
+## 💻 Demonstração
 
 ```bash
 Menu >
 ❯ Cadastrar meta
   Listas metas
+  Metas Realizadas
+  Metas Abertas
+  Deletar Metas
   Sair
 ```
 
-Ao listar metas:
+## 🛠️ Instalação
 
-```bash
-Use as setas para navegar e a barra de espaço para marcar ou desmarcar e Enter para finalizar esta etapa
-◯ Tomar 3L de água por dia
-◯ Fazer 30 minutos de caminhada
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/AndersonJunior95/Gerenciador-de-Metas.git
+   cd Gerenciador-de-Metas
+   ```
 
-## 📦 Tecnologias usadas
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Execute o aplicativo:**
+   ```bash
+   node index.js
+   ```
+
+## 📂 Estrutura dos arquivos
+
+- `index.js` — Código principal do aplicativo.
+- `metas.json` — Arquivo onde as metas são salvas.
+- `package.json` — Dependências do projeto.
+
+## 🧰 Tecnologias utilizadas
 
 - [Node.js](https://nodejs.org/)
-- [@inquirer/prompts](https://www.npmjs.com/package/@inquirer/prompts)
+- [Inquirer](https://www.npmjs.com/package/inquirer) (e @inquirer/prompts)
 
-## 📥 Instalação
+## 🚧 Possíveis melhorias
 
-```bash
-git clone https://github.com/AndersonJunior95/Gerenciador-de-Metas.git
-cd Gerenciador-de-Metas
-npm install
-node index.js
-```
+- 🔒 Adicionar autenticação de usuário.
+- ✏️ Permitir editar metas.
+- 📤 Exportar/importar metas.
+- 🌐 Interface web ou mobile.
 
-> **Atenção**: o arquivo principal deve ser chamado `index.js` (ou atualize conforme o nome real).
+## 👤 Autor
 
-## 📁 Estrutura básica
+Anderson  
+[https://github.com/AndersonJunior95/Gerenciador-de-Metas](https://github.com/AndersonJunior95/Gerenciador-de-Metas)
 
-```
-index.js         # Arquivo principal do programa
-package.json     # Dependências e scripts
-```
+---
 
-## 🧠 Aprendizado
-
-Este projeto foi criado para praticar:
-
-- Manipulação de arrays e objetos em JavaScript
-- Uso de `async/await` com prompts interativos
-- Organização de lógica para aplicações CLI (Command Line Interface)
-
-## 💡 Melhorias futuras
-
-- [ ] Armazenar metas em arquivo JSON (para persistência)
-- [x] Adicionar edição e remoção de metas
-- [ ] Marcar metas com prazos e alertas
-
-## 🧑‍💻 Autor
-
-Anderson Gonçalves
+Sinta-se à vontade para contribuir ou sugerir melhorias! 😃
